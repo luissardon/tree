@@ -1,0 +1,33 @@
+!doctype
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Neoauto.com - Paso 1</title>
+    <link href="css/fonts.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="css/grids.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="css/vertical-grid.css" media="all" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">
+      angular
+          .module('app', [])
+          .controller('appCtrl', ($scope) => {})
+    </script>
+  </head>
+  <body>
+    <!-- HEADER-->
+    <header>
+      <!-- ubicacion para un posible banner-->
+      <div class="header-content"></div>
+      <div class="header--posting">
+        <div class="header-menu--posting"></div>
+      </div>
+    </header>
+    <!-- CONTENT-->
+    <div class="dropdown-cards">
+      <each card="card" in="in" cards="cards">card.i</each>
+    </div>
+    <!-- FOOTER-->
+    <footer>
+      <div class="links"></div>
+    </footer>
+  </body>
+</html>

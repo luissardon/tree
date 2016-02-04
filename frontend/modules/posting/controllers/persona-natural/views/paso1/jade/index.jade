@@ -1,0 +1,8 @@
+extends _layout.jade
+
+block content
+    .dropdown-cards
+        - cards = [{i:1}, {i:2}, {i:3}]
+        each(card in cards)
+            include ../_components/dropdown-card/dropdown-card--persona-natural--paso1.component.jade
+                | card.i

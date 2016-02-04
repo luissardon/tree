@@ -1,0 +1,9 @@
+extends ../../../../../_base/jade/layout--posting.jade
+
+block content
+    .dropdown-cards
+        - cards = [{i:1}, {i:2}, {i:3}]
+        each(card in cards)
+            include ../../../../../_components-card/dropdown-card--persona-natural.component.jade
+                block title
+                    | card.i
